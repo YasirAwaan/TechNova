@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav>
+        <h1>TechNova</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="overlay"></div>
+      <h2>Welcome to TechNova</h2>
+      <p>Innovate. Build. Deploy.</p>
+      <button class="btn-1">Explore Projects</button>
+    </section>
+    <div class="layer layer-1"></div>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          TechNova is a dynamic tech company dedicated to innovation and digital
+          transformation. We build cutting-edge solutions to solve real-world
+          problems.
+        </p>
+        <ul>
+          <li>✅Innovative Ideas</li>
+          <li>✅Expert Team</li>
+          <li>✅Scalable Projects</li>
+        </ul>
+      </div>
+      <div class="about-image">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSvCXuIXyNsZsUrolAW3TH4i2xYZ_C8X7qJw&s"
+          alt="About Image"
+        />
+      </div>
+    </section>
+    <div class="layer"></div>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h1>Our Projects</h1>
+      <div class="project-list">
+        <!-- Project 1 -->
+        <div class="cards card-1 project-card">
+          <h2>Project 1</h2>
+          <h3>Web Development</h3>
+          <ul>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                alt="HTML5 Logo"
+              />
+              HTML
+            </li>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                alt="CSS Logo"
+              />
+              CSS
+            </li>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                alt="Tailwind Logo"
+              />
+              TailwindCSS
+            </li>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React Logo"
+              />
+              React.js
+            </li>
+          </ul>
+          <p>
+            Coding is the process of writing instructions for computers using
+            programming languages to build websites, apps, games, and software.
+          </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="cards card-2 project-card">
+          <h2>Project 2</h2>
+          <h3>App Development</h3>
+          <ul>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
+                alt="Java"
+              />
+              Java
+            </li>
+            <li>
+              <img
+                src="https://icon.icepanel.io/Technology/svg/Kotlin.svg"
+                alt="Kotlin"
+              />
+              Kotlin
+            </li>
+            <li>
+              <img
+                src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"
+                alt="Dart"
+              />
+              Dart
+            </li>
+            <li>
+              <img
+                src="https://www.svgrepo.com/show/303206/javascript-logo.svg"
+                alt="JavaScript"
+              />
+              JavaScript
+            </li>
+          </ul>
+          <p>
+            Coding is the process of writing instructions for computers using
+            programming languages to build websites, apps, games, and software.
+          </p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="cards card-3 project-card">
+          <h2>Project 3</h2>
+          <h3>Game Development</h3>
+          <ul>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+                alt="C++"
+              />
+              C++
+            </li>
+            <li>
+              <img
+                src="https://www.vectorlogo.zone/logos/java/java-icon.svg"
+                alt="Java"
+              />
+              Java
+            </li>
+            <li>
+              <img
+                src="https://www.svgrepo.com/show/452091/python.svg"
+                alt="Python"
+              />
+              Python
+            </li>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg"
+                alt="Rust"
+              />
+              Rust
+            </li>
+          </ul>
+          <p>
+            Coding is the process of writing instructions for computers using
+            programming languages to build websites, apps, games, and software.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="layer"></div>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button class="btn-2" type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 TechNova. All rights reserved.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector("#nav-links");
+        menu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

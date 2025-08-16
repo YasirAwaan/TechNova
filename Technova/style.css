@@ -1,0 +1,402 @@
+html,
+body {
+  behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* side ka extra scroll hata dega */
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Standard */
+}
+body {
+  -webkit-touch-callout: none; /* iOS ke liye */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation; /* Scroll aur tap optimize karega */
+}
+form,
+textarea,
+input,
+p {
+  user-select: text;
+} /* Hero Section */
+.hero {
+  position: relative;
+  height: 60vh;
+  background-image: url("https://technova.ae/wp-content/uploads/2022/11/TECHNOVA.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  text-align: center;
+  overflow: hidden;
+  z-index: 2;
+}
+.hero h2,
+.hero p,
+.hero button {
+  position: relative;
+  z-index: 2;
+}
+.hero h2 {
+  font-size: 30px;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+} /* Nav Section */
+nav {
+  height: 50px; /* ya jitni chhoti chahiye */
+  background-image: url("https://cdn.dribbble.com/userupload/15163763/file/original-9bbf0ef015f03a5d76171d5ba7fc4aec.png?resize=752x&vertical=center");
+  background-size: cover;
+  background-position: top;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+a:hover {
+  color: mediumturquoise;
+}
+.btn-1 {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-weight: 500;
+  background-color: olive;
+  color: white;
+  cursor: pointer;
+}
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li a {
+  color: oldlace;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+img {
+  border-radius: 50px;
+  height: 50px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
+}
+.layer {
+  height: 5px;
+  background-color: mediumturquoise;
+}
+.layer-1 {
+  background-color: #333;
+} /* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  color: #333;
+}
+.about-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+.about-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.about-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: darkgoldenrod;
+  font-style: oblique;
+}
+.projects h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: oldlace;
+} /* Projects Section */
+.cards ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.cards li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cards li img {
+  width: 35px;
+  height: 35px;
+}
+.cards p {
+  padding: 10px;
+  font-size: 14px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  color: white;
+}
+.card-1 {
+  background-color: cadetblue;
+}
+.card-2 {
+  background-color: rgb(151, 151, 29);
+}
+.card-3 {
+  background-color: #333;
+}
+.cards {
+  box-shadow: 0px 0px 2px 2px cyan;
+  max-width: 300px;
+  min-height: 100px;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+}
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  transform: scale(1.07);
+}
+.projects {
+  display: block;
+  padding: 20px;
+  background-color: #222; /* or your preferred background */
+  text-align: center;
+}
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.projects h1 {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: ui-monospace;
+  color: #fff;
+}
+.cards h3 {
+  text-align: center;
+  color: aliceblue;
+} /* Default: Desktop - hamburger hide */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+.contact h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: darkgoldenrod;
+  padding: 30px 20px;
+  font-style: oblique;
+  text-align: center;
+} /* Contact Section */
+form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+textarea,
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border-color: cadetblue;
+  border: 1px solid cadetblue;
+}
+.btn-2 {
+  border-radius: 10px;
+  padding: 10px 45px;
+  font-weight: 500;
+  background-color: cadetblue;
+  color: white;
+  cursor: pointer;
+} /* Footer Section */
+footer p {
+  text-align: center;
+} /* 📱 Media Queries for Mobile (max-width: 800px) */
+@media only screen and (max-width: 800px) {
+  /* 🔹 HERO Section */
+  .hero {
+    height: auto;
+    padding: 90px 20px;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 24px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .hero {
+    background-position: center;
+    background-size: 115% auto !important; /* width adjust */
+    background-repeat: no-repeat;
+  }
+} /* 🔹 NAVBAR - Responsive Burger and Layout */
+nav {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  height: 45px;
+  position: relative;
+}
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+nav ul {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 150px;
+  padding: 10px;
+  z-index: 100;
+  border-radius: 5px;
+}
+nav ul.show {
+  display: flex;
+} /* 🔹 ABOUT Section */
+.about {
+  flex-direction: column;
+  padding: 30px 10px;
+  text-align: center;
+}
+.about ul {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.about-content h2 {
+  font-size: 30px;
+}
+.about-content p {
+  font-size: 16px;
+} /* 🔹 PROJECTS Section */
+.projects {
+  flex-direction: column;
+  align-items: center;
+}
+.cards {
+  width: 90%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cards ul {
+  align-items: center;
+}
+.cards p {
+  text-align: center;
+} /* 🔹 Images */
+img {
+  height: 40px;
+} /* Default: Desktop - hamburger hide */
+.hamburger {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+} /* Media Query for small screen */
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block; /* ✅ sirf mobile screen par show */
+  }
+  #nav-links {
+    display: none; /* ✅ hide links by default */
+    flex-direction: column;
+    width: 50%;
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+  }
+  #nav-links.active {
+    display: flex; /* ✅ show when clicked */
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 20px;
+  }
+  .about-image img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+  }
+} /* 🔹 New Fixes Without Changing Existing Code */
+@media (max-width: 768px) {
+  /* Welcome to TechNova layer & background center */
+  .layer,
+  .layer-1 {
+    margin: 0 auto;
+    display: block;
+  }
+  .hero {
+    align-items: center;
+    justify-content: center;
+  }
+  form {
+    flex-direction: column;
+  }
+  textarea {
+    width: 180px;
+    height: 50px;
+  } /* Footer column on mobile */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
