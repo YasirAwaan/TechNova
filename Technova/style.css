@@ -3,7 +3,7 @@ body {
   behavior: smooth;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden; /* side ka extra scroll hata dega */
+  overflow-x: hidden;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
@@ -21,19 +21,20 @@ html {
   user-select: none; /* Standard */
 }
 body {
-  -webkit-touch-callout: none; /* iOS ke liye */
+  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  touch-action: manipulation; /* Scroll aur tap optimize karega */
+  touch-action: manipulation; /* optimize Scroll Tab */
 }
 form,
 textarea,
 input,
 p {
   user-select: text;
-} /* Hero Section */
+}
+/* Hero Section */
 .hero {
   position: relative;
   height: 60vh;
@@ -61,7 +62,8 @@ p {
 .hero-content {
   position: relative;
   z-index: 2;
-} /* Nav Section */
+}
+/* Nav Section */
 nav {
   height: 50px; /* ya jitni chhoti chahiye */
   background-image: url("https://cdn.dribbble.com/userupload/15163763/file/original-9bbf0ef015f03a5d76171d5ba7fc4aec.png?resize=752x&vertical=center");
@@ -118,7 +120,8 @@ img {
 }
 .layer-1 {
   background-color: #333;
-} /* About Section */
+}
+/* About Section */
 .about {
   display: flex;
   align-items: center;
@@ -142,11 +145,12 @@ img {
   color: darkgoldenrod;
   font-style: oblique;
 }
+/* Projects Section */
 .projects h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
   color: oldlace;
-} /* Projects Section */
+}
 .cards ul {
   display: flex;
   flex-direction: column;
@@ -215,7 +219,8 @@ img {
 .cards h3 {
   text-align: center;
   color: aliceblue;
-} /* Default: Desktop - hamburger hide */
+}
+/* Default: Desktop - hamburger hide */
 .hamburger {
   display: none;
   font-size: 28px;
@@ -229,7 +234,8 @@ img {
   padding: 30px 20px;
   font-style: oblique;
   text-align: center;
-} /* Contact Section */
+}
+/* Contact Section */
 form {
   align-items: center;
   display: flex;
@@ -250,7 +256,8 @@ input {
   background-color: cadetblue;
   color: white;
   cursor: pointer;
-} /* Footer Section */
+}
+/* Footer Section */
 footer p {
   text-align: center;
 } /* 📱 Media Queries for Mobile (max-width: 800px) */
@@ -272,7 +279,8 @@ footer p {
     background-size: 115% auto !important; /* width adjust */
     background-repeat: no-repeat;
   }
-} /* 🔹 NAVBAR - Responsive Burger and Layout */
+}
+/* 🔹 NAVBAR - Responsive Burger and Layout */
 nav {
   flex-direction: row;
   justify-content: space-between;
@@ -299,7 +307,8 @@ nav ul {
 }
 nav ul.show {
   display: flex;
-} /* 🔹 ABOUT Section */
+}
+/* 🔹 ABOUT Section */
 .about {
   flex-direction: column;
   padding: 30px 10px;
@@ -315,7 +324,8 @@ nav ul.show {
 }
 .about-content p {
   font-size: 16px;
-} /* 🔹 PROJECTS Section */
+}
+/* 🔹 PROJECTS Section on small screens*/
 .projects {
   flex-direction: column;
   align-items: center;
@@ -330,7 +340,8 @@ nav ul.show {
 }
 .cards p {
   text-align: center;
-} /* 🔹 Images */
+}
+/* 🔹 Images */
 img {
   height: 40px;
 } /* Default: Desktop - hamburger hide */
@@ -342,7 +353,7 @@ img {
 } /* Media Query for small screen */
 @media only screen and (max-width: 768px) {
   .hamburger {
-    display: block; /* ✅ sirf mobile screen par show */
+    display: block;
   }
   #nav-links {
     display: none; /* ✅ hide links by default */
@@ -392,7 +403,8 @@ img {
   textarea {
     width: 180px;
     height: 50px;
-  } /* Footer column on mobile */
+  }
+  /* Footer column on mobile */
   footer {
     display: flex;
     flex-direction: column;
