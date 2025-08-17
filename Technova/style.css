@@ -334,8 +334,8 @@ input {
 
 textarea::placeholder,
 input::placeholder {
-  text-align: center; /* sirf placeholder ko center */
-  display: block; /* ensure center properly kaam kare */
+  text-align: center;
+  display: block;
 }
 
 .btn-2 {
