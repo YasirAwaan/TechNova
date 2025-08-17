@@ -88,12 +88,26 @@ nav ul {
   padding: 0;
   gap: 20px;
 }
-
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #e91e63;
+  left: 0;
+  bottom: -3px; /* text ke bilkul neeche */
+  transition: width 0.3s ease;
+}
+.nav a:hover::after {
+  width: 100%;
+}
 nav ul li a {
   color: oldlace;
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
+  position: relative;
+  display: inline-block;
 }
 
 nav ul li a:hover {
@@ -107,9 +121,32 @@ a:hover {
   border-radius: 10px;
   padding: 10px 15px;
   font-weight: 500;
-  background-color: olive;
+  background: linear-gradient(
+    90deg,
+    #00ffcc,
+    #ff00cc,
+    #00ccff,
+    #00a2ff,
+    #73ff00,
+    #271494,
+    #00a2ff,
+    #8a2be2
+  );
+  background-size: 400% 400%;
   color: white;
   cursor: pointer;
+  animation: btn-glow 6s ease infinite;
+}
+@keyframes btn-glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 li a {
   color: oldlace;
@@ -218,8 +255,32 @@ img {
 .projects {
   display: block;
   padding: 20px;
-  background-color: #222; /* or your preferred background */
+  background: linear-gradient(
+    100deg,
+    #0d1117,
+    #161b22,
+    #1f2937,
+    #222831,
+    #2c2c54,
+    #3a3a3c,
+    #00ffcc,
+    #ff00cc
+  );
+  background-size: 400% 400%;
   text-align: center;
+  animation: card-glow 10s ease infinite;
+}
+/* Animation Glow For Project BackGround */
+@keyframes card-glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .project-list {
   display: flex;
@@ -247,7 +308,7 @@ img {
 .contact h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
-  color: darkgoldenrod;
+  color: cadetblue;
   padding: 30px 20px;
   font-style: oblique;
   text-align: center;
@@ -279,12 +340,25 @@ input::placeholder {
 
 .btn-2 {
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 10px 45px;
   font-weight: 500;
   background-color: cadetblue;
+  background: linear-gradient(
+    90deg,
+    #00ffcc,
+    #ff00cc,
+    #00ccff,
+    #00a2ff,
+    #73ff00,
+    #271494,
+    #00a2ff,
+    #8a2be2
+  );
+  background-size: 400% 400%;
   color: white;
   cursor: pointer;
+  animation: btn-glow 6s ease infinite;
 }
 /* Footer Section */
 footer p {
